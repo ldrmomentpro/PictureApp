@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.eldiar.pictureapp.presentation.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_fullImageFragment"
+            app:destination="@id/fullImageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_picture"
+        android:name="com.eldiar.pictureapp.presentation.ui.picture.PictureFragment"
+        android:label="@string/title_random_picture"
+        tools:layout="@layout/fragment_picture" />
+
+    <fragment
+        android:id="@+id/fullImageFragment"
+        android:name="com.eldiar.pictureapp.presentation.ui.home.FullImageFragment"
+        android:label="FullImageFragment" >
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            android:defaultValue='' />
+        <action
+            android:id="@+id/action_fullImageFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+</navigation>

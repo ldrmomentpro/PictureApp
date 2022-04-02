@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PictureApp</string>
+    <string name="title_home">Список</string>
+    <string name="title_random_picture">Фото</string>
+    <string name="author">Author: %s</string>
+</resources>
