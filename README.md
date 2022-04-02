@@ -1,7 +1,7 @@
 # PictureApp
 Приложение для просмотра изображений.
 
-# Use case diagram
+# Архитектура проекта
 <img src="https://github.com/ldrmomentpro/PictureApp/blob/master/pictureapp.png" width="900" />
 
 # Скриншоты
